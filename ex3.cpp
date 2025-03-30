@@ -1,7 +1,7 @@
 /***************************************************************************
  *   ex3.cpp                                  Version 20250330.141830      *
  *                                                                         *
- *   Normalização                                                        *
+ *   Normalização                                                          *
  *   Copyright (C) 2025         by Arthur Epifanio De Azevedo              *
  ***************************************************************************
  *   This program is free software; you can redistribute it and/or modify  *
