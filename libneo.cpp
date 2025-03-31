@@ -56,7 +56,7 @@ void normalizar()
     cin >> minimo;
     if(minimo >= x)
     {
-        cerr << "Erro: minimo; deve ser menor que x." << endl;
+        cerr << "Erro: minimo deve ser menor que x." << endl;
         continue;
     }else
         break;
@@ -68,7 +68,7 @@ void normalizar()
     cin >> maximo;
     if (maximo <= x)
     {
-        cerr << "Erro: maximo; deve ser maior que x." << endl;
+        cerr << "Erro: maximo deve ser maior que x." << endl;
         continue;
         
     }else
