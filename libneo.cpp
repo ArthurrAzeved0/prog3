@@ -71,10 +71,6 @@ void normalizar()
         cerr << "Erro: maximo; deve ser maior que x." << endl;
         continue;
         
-    }else if (maximo <= minimo)
-    {
-        cerr << "Erro: maximo; deve ser maior que minimo." << endl;
-        continue;
     }else
         break;
     }
