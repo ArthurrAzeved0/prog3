@@ -53,15 +53,15 @@ int main(void)
 {
 
     // Initialize random number generator
-    random_device rd;  // Obtain a random number from hardware
-    mt19937 eng(rd()); // Seed the generator
-    uniform_int_distribution<> distr(1, 100); // Define the range
+    random_device rd;  
+    mt19937 gen(rd()); 
+    uniform_int_distribution<> dist(1, 100); // Define the range
 
     // Vetor com numeros 500 aleatorios
-    vector<int> numeros(500);
+    vector<int> numeros;
     for (int i = 0; i < 500; ++i)
     {
-        numeros.push_back(distr(eng)); // Preenche o vetor com numeros aleatorios
+        numeros.push_back(dist(gen)); // Preenche o vetor com numeros aleatorios
     }
 
     // Ordena o vetor
@@ -70,13 +70,12 @@ int main(void)
     for(int i = 0; i < 500; ++i)
     {
         cout << numeros[i] << " "; // Imprime o vetor ordenado
-        if(i % 10 == 9) cout << endl; // Imprime uma nova linha a cada 10 numeros
+        if(i % 50 == 49) cout << endl; // Imprime uma nova linha a cada 10 numeros
     }
     
     return 0;
 }
 
-/* add more functions here */
 
 /* ---------------------------------------------------------------------- */
 /* vi: set ai et ts=4 sw=4 tw=0 wm=0 fo=croql : CPP config - Vim modeline */
