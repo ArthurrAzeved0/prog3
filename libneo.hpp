@@ -64,6 +64,10 @@
 /* includes */
 #include <iostream> /* (Input/output library) Several standard stream objects */
 #include <vector> /* (Standard C++ library) Dynamic array */
+#include <algorithm>
+#include <random> /* (Standard C++ library) Random number generation */
+#include <chrono> /* (Standard C++ library) Time utilities */
+#include <stdexcept> /* (Standard C++ library) Standard exception classes */
 using namespace std;
 
 
