@@ -39,7 +39,7 @@
 #include "libneo.hpp"
 
 /* ---------------------------------------------------------------------- */
-/* This function does ...
+/* This function does
  *
  * It receives as input ...
  *
@@ -47,8 +47,54 @@
  */
 int main(void)
 {
-   
+    int inicio, fim, quantidade;
 
+    cout << "=== Sorteador sem repeticao ===\n";
+    cout << "Digite o valor inicial: ";
+    cin >> inicio; // coleta o valor inicial
+
+    while (true)
+    {
+
+        cout << "Digite o valor final: ";
+        cin >> fim; // coleta o valor final
+
+        // verifica se o valor inicial é menor que o final
+        if (inicio >= fim)
+        {
+            cerr << "Erro: valor inicial deve ser menor que o valor final." << endl;
+        }
+        else
+            break;
+    }
+
+    int total = fim - inicio + 1; // calcula o total de valores possíveis
+    cout << "Total de valores possiveis: " << total << endl;
+
+    while (true)
+    {
+        cout << "Digite a quantidade de valores a serem sorteados: ";
+        cin >> quantidade; // coleta a quantidade de valores a serem sorteados
+
+        if (quantidade <= 0 || quantidade > total)
+        {
+            cerr << "Erro: quantidade deve ser maior que 0 e menor ou igual ao total de valores." << endl;
+        }
+        else
+            break;
+    }
+
+    Sorteio sorteio(inicio, fim); // cria o objeto Sorteio com os valores inicial e final
+
+    cout << "\nSorteando " << quantidade << " valores entre " << inicio << " e " << fim << ":\n";
+
+    for (int i = 0; i < quantidade; ++i)
+    {
+
+        cout << sorteio.sortear() << " "; // sorteia e imprime o valor
+    }
+
+    cout << "\nFim do sorteio.\n";
     return 0;
 }
 
