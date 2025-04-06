@@ -70,7 +70,7 @@ int main(void)
     for(int i = 0; i < 500; ++i)
     {
         cout << numeros[i] << " "; // Imprime o vetor ordenado
-        if(i % 50 == 49) cout << endl; // Imprime uma nova linha a cada 10 numeros
+        if(i % 22 == 21) cout << endl; // Imprime uma nova linha a cada 10 numeros
     }
     
     return 0;
