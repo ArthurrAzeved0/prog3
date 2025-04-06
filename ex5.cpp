@@ -72,6 +72,7 @@ int main(void)
         cout << numeros[i] << " "; // Imprime o vetor ordenado
         if(i % 22 == 21) cout << endl; // Imprime uma nova linha a cada 10 numeros
     }
+    cout << endl; // Imprime uma nova linha no final
     
     return 0;
 }
