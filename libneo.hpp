@@ -63,6 +63,7 @@
 /* ---------------------------------------------------------------------- */
 /* includes */
 #include <iostream> /* (Input/output library) Several standard stream objects */
+#include <vector> /* (Standard C++ library) Dynamic array */
 using namespace std;
 
 
@@ -75,6 +76,22 @@ using namespace std;
 #ifndef _LIBNEO_HPP
 #define _LIBNEO_HPP
 #endif /* NOT def _LIBNEO_H */
+
+/* ---------------------------------------------------------------------- */
+//Classes
+
+class Sorteio 
+{
+    private:
+    vector<int> numeros;
+    size_t nNumeros;
+
+    public: 
+    Sorteio(int inicio, int fim);
+    bool verificar() const;
+    int sortear();
+};
+
 //-------------------------------------------------------------------------
 // prototypes
 void normalizar(); // Função de normalização
