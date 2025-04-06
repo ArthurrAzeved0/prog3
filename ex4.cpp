@@ -39,11 +39,11 @@
 #include "libneo.hpp"
 
 /* ---------------------------------------------------------------------- */
-/* This function does
+/* This function does: Sorteia valores inteiros entre dois limites, sem repetição.
  *
- * It receives as input ...
+ * It receives as input: 3 valores inteiros, o valor inicial, valor final e a quantidade de valores a serem sorteados.
  *
- * It returns ...
+ * It returns: Um vetor de inteiros com os valores sorteados.
  */
 int main(void)
 {
