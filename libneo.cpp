@@ -83,8 +83,40 @@ void normalizar()
     cout << "O valor normalizado é: " << resultado << endl;
 }
 
+/* ---------------------------------------------------------------------- */
+// Constructor for Sorteio class
+
+Sorteio::Sorteio(int inicio, int fim) 
+{
+    for(int i = inicio; i <= fim; ++i) 
+    {
+        numeros.push_back(i);
+    }
+
+    unsigned seed = chrono::system_clock::now().time_since_epoch().count();
+    shuffle(numeros.begin(), numeros.end(), default_random_engine(seed));
+
+     nNumeros = 0;
+}
 
 
+bool Sorteio::verificar() const 
+{
+    return nNumeros < numeros.size();
+}
+
+int Sorteio::sortear() 
+{
+    if(verificar()) 
+    {
+        return numeros[nNumeros++];
+    }else 
+    {
+        throw out_of_range("Todos os números já foram sorteados.");
+    }
+
+   
+}
 /* ---------------------------------------------------------------------- */
 /* vi: set ai et ts=4 sw=4 tw=0 wm=0 fo=croql : CPP config - Vim modeline */
 /* Template by Dr. Beco <rcb at beco dot cc>      Version 20250309.153530 */
