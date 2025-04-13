@@ -23,19 +23,6 @@
                 <property name="text">
                     <string>Hello World!</string>
                 </property>
-                <widget class="QPushButton" name="pushButton">
-<property name="geometry">
-<rect>
-<x>90</x>
-<y>180</y>
-<width>88</width>
-<height>34</height>
-</rect>
-</property>
-<property name="text">
-<string>PushButton</string>
-</property>
-</widget>
             </widget>
         </widget>
     </widget>
